@@ -60,9 +60,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ---    NAV     ---
   [2] = LAYOUT_split_3x6_3(
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
-             XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,      KC_MS_WH_RIGHT,   KC_MS_WH_DOWN,     KC_MS_WH_UP,   KC_MS_WH_LEFT,  XXXXXXX,         XXXXXXX,
+             XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,       KC_MS_WH_LEFT,   KC_MS_WH_DOWN,     KC_MS_WH_UP,  KC_MS_WH_RIGHT,  XXXXXXX,         XXXXXXX,
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
-             XXXXXXX,         KC_LGUI,         KC_LALT,         KC_LCTL,         KC_LSFT,         XXXXXXX,            KC_RIGHT,         KC_DOWN,           KC_UP,         KC_LEFT,         XXXXXXX,    KC_CAPS_LOCK,
+             XXXXXXX,         KC_LGUI,         KC_LALT,         KC_LCTL,         KC_LSFT,         XXXXXXX,             KC_LEFT,         KC_DOWN,           KC_UP,        KC_RIGHT,         XXXXXXX,    KC_CAPS_LOCK,
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
              XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,             KC_HOME,    KC_PAGE_DOWN,      KC_PAGE_UP,          KC_END,         XXXXXXX,         XXXXXXX,
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
