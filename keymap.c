@@ -19,17 +19,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include QMK_KEYBOARD_H
 #include <stdio.h>
 
-// Tap Dance declarations
-enum {
-    TD_X_REBOOT,
-};
-
-// Tap Dance definitions
-tap_dance_action_t tap_dance_actions[] = {
-    // Tap once for nothing, twice for Bootload
-    [TD_X_REBOOT] = ACTION_TAP_DANCE_DOUBLE(KC_NO, QK_BOOT),
-};
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ---    BASE    ---
   [0] = LAYOUT_split_3x6_3(
@@ -112,7 +101,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ---    FUN     ---
   [6] = LAYOUT_split_3x6_3(
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
-         TD_X_REBOOT,          KC_F12,           KC_F7,           KC_F8,           KC_F9, KC_PRINT_SCREEN,             XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,
+             XXXXXXX,          KC_F12,           KC_F7,           KC_F8,           KC_F9, KC_PRINT_SCREEN,             XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
              XXXXXXX,          KC_F11,           KC_F4,           KC_F5,           KC_F6,         XXXXXXX,             XXXXXXX,         KC_LSFT,         KC_LCTL,         KC_LALT,         KC_LGUI,         XXXXXXX,
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
