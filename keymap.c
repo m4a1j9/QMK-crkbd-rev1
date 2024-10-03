@@ -75,11 +75,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ---   SYMBOLS  ---
   [4] = LAYOUT_split_3x6_3(
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
-             XXXXXXX,         XXXXXXX,    KC_BACKSLASH,        KC_SLASH,         XXXXXXX,         XXXXXXX,             XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,
+             XXXXXXX,         KC_HASH,    KC_BACKSLASH,        KC_SLASH,         XXXXXXX,         XXXXXXX,             XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
-            KC_GRAVE,    KC_AMPERSAND,         KC_PIPE,KC_LEFT_ANGLE_BRACKET,KC_RIGHT_ANGLE_BRACKET,XXXXXXX,           XXXXXXX,         KC_LSFT,         KC_LCTL,         KC_LALT,         KC_LGUI,         XXXXXXX,
+            KC_GRAVE,    KC_AMPERSAND,         KC_PIPE, KC_LEFT_BRACKET,KC_RIGHT_BRACKET,         XXXXXXX,             XXXXXXX,         KC_LSFT,         KC_LCTL,         KC_LALT,         KC_LGUI,         XXXXXXX,
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
-             XXXXXXX,       KC_DOLLAR,      KC_EXCLAIM, KC_LEFT_BRACKET,KC_RIGHT_BRACKET,         XXXXXXX,             XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,
+             XXXXXXX,       KC_DOLLAR,      KC_EXCLAIM,KC_LEFT_ANGLE_BRACKET,KC_RIGHT_ANGLE_BRACKET,KC_PERCENT,        XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
                                                           KC_LEFT_PAREN,  KC_RIGHT_PAREN,        KC_QUOTE,             _______,         XXXXXXX,         XXXXXXX
                                                     //|----------------+----------------+----------------|   |----------------+----------------+----------------|
