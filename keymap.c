@@ -19,6 +19,25 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include QMK_KEYBOARD_H
 #include <stdio.h>
 
+uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case LT(1,KC_ESC):
+            return 100;
+        case LT(2,KC_SPC):
+            return 100;
+        case LT(3,KC_TAB):
+            return 100;
+        case LT(4,KC_ENT):
+            return 100;
+        case LT(5,KC_BSPC):
+            return 100;
+        case LT(6,KC_DEL):
+            return 100;
+        default:
+            return TAPPING_TERM;
+    }
+}
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ---    BASE    ---
   [0] = LAYOUT_split_3x6_3(
@@ -29,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
              XXXXXXX,            KC_Z,            KC_X,            KC_C,            KC_V,            KC_B,                KC_N,            KC_M,         KC_COMM,          KC_DOT,         KC_SLSH,KC_RIGHT_BRACKET,
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
-                                                           LT(1,KC_ESC),    LT(2,KC_BSPC),    LT(3,KC_TAB),        LT(4,KC_ENT),   LT(5,KC_SPC),    LT(6,KC_DEL)
+                                                           LT(1,KC_ESC),    LT(2,KC_SPC),    LT(3,KC_TAB),        LT(4,KC_ENT),   LT(5,KC_BSPC),    LT(6,KC_DEL)
                                                     //|----------------+----------------+----------------|   |----------------+----------------+----------------|
   ),
 
@@ -75,11 +94,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // ---   SYMBOLS  ---
   [4] = LAYOUT_split_3x6_3(
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
-             XXXXXXX,         KC_HASH,    KC_BACKSLASH,        KC_SLASH,         XXXXXXX,      KC_PERCENT,             XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,
+             XXXXXXX,         KC_HASH,    KC_BACKSLASH,        KC_SLASH,         XXXXXXX,      KC_PERCENT,             XXXXXXX,         XXXXXXX,   KC_LEFT_PAREN,  KC_RIGHT_PAREN,         XXXXXXX,         XXXXXXX,
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
-            KC_GRAVE,    KC_AMPERSAND,         KC_PIPE, KC_LEFT_BRACKET,KC_RIGHT_BRACKET,         XXXXXXX,             XXXXXXX,         KC_LSFT,         KC_LCTL,         KC_LALT,         KC_LGUI,         XXXXXXX,
+            KC_GRAVE,    KC_AMPERSAND,         KC_PIPE, KC_LEFT_BRACKET,KC_RIGHT_BRACKET,        KC_EQUAL,             XXXXXXX,         KC_LSFT,         KC_LCTL,         KC_LALT,         KC_LGUI,         XXXXXXX,
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
-             XXXXXXX,       KC_DOLLAR,      KC_EXCLAIM,KC_LEFT_ANGLE_BRACKET,KC_RIGHT_ANGLE_BRACKET,KC_EQUAL,        XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,
+             XXXXXXX,       KC_DOLLAR,      KC_EXCLAIM,KC_LEFT_ANGLE_BRACKET,KC_RIGHT_ANGLE_BRACKET,XXXXXXX,           XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,         XXXXXXX,
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
                                                           KC_LEFT_PAREN,  KC_RIGHT_PAREN,        KC_QUOTE,             _______,         XXXXXXX,         XXXXXXX
                                                     //|----------------+----------------+----------------|   |----------------+----------------+----------------|
