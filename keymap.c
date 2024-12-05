@@ -83,7 +83,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [SYMBOLS] = LAYOUT_split_3x6_3(
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
-             XXXXXXX,         KC_HASH,    KC_BACKSLASH,        KC_SLASH,         XXXXXXX,      KC_PERCENT,             XXXXXXX,         XXXXXXX,   KC_LEFT_PAREN,  KC_RIGHT_PAREN,         XXXXXXX,         XXXXXXX,
+             XXXXXXX,         KC_HASH,        KC_SLASH,    KC_BACKSLASH,         XXXXXXX,      KC_PERCENT,             XXXXXXX,         XXXXXXX,   KC_LEFT_PAREN,  KC_RIGHT_PAREN,         XXXXXXX,         XXXXXXX,
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
             KC_GRAVE,    KC_AMPERSAND,         KC_PIPE, KC_LEFT_BRACKET,KC_RIGHT_BRACKET,        KC_EQUAL,             XXXXXXX,         KC_LSFT,         KC_LCTL,         KC_LALT,         KC_LGUI,         XXXXXXX,
   //|---------------+----------------+----------------+----------------+----------------+----------------|   |----------------+----------------+----------------+----------------+----------------+----------------|
